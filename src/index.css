@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+:root {
+  color: #ffffff;
+  background-color: #0a0f1e;
+  font-family: 'Space Grotesk', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(29, 158, 117, 0.22), transparent 35%),
+    radial-gradient(circle at 88% 12%, rgba(239, 68, 68, 0.16), transparent 32%),
+    radial-gradient(circle at 50% 120%, rgba(56, 189, 248, 0.15), transparent 40%),
+    #0a0f1e;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.bg-midnight {
+  background: linear-gradient(180deg, rgba(8, 13, 30, 0.9), rgba(10, 15, 30, 0.98));
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.45s ease-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
